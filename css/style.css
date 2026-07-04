@@ -37,10 +37,14 @@ font-family:Poppins,sans-serif;
 
 .hero{
 
-padding-top:100px;
+padding-top:80px;
 
-padding-bottom:180px;
+padding-bottom:80px;
 
+}
+
+body{
+    padding-top: 80px;
 }
 
 .hero h1{
@@ -425,7 +429,7 @@ padding:90px 0;
     .profile-img{
         width: 220px;
         height: 220px;
-    }
+    }             
 
 }   
 @media (max-width:768px){
@@ -438,7 +442,8 @@ padding:90px 0;
     }
 
     .skill-item{
-        width: 140px;
+        width: 100px;
+        max-width: 140px;
     }
 
     .skill-item img{
@@ -450,4 +455,9 @@ padding:90px 0;
         font-size: 14px;
     }
 
-}                  
+}     
+@media (max-width: 768px) {
+    body{
+        padding-top: 80px;
+    }
+}             
