@@ -8,9 +8,31 @@ font-family:Poppins,sans-serif;
 }
 
 .navbar{
-       
-background:#050b1c;
+    background:#0f172a;
+    padding:15px 0;
+}
 
+.navbar-brand{
+    color:#19c8ff !important;
+    font-size:24px;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#19c8ff !important;
+}
+
+.navbar-toggler{
+    border:2px solid #19c8ff;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
 }
 
 .hero{
@@ -109,6 +131,34 @@ padding:90px 0;
 
 .skill-card ul li:last-child{
     border-bottom:none;
+}
+/* ===========================
+   SKILL
+=========================== */
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-item{
+    width: 180px;
+    text-align: center;
+}
+
+.skill-item img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.skill-item span{
+    display: block;
+    color: #fff;
+    font-weight: 600;
 }
 
 /* =======================
@@ -232,13 +282,14 @@ padding:90px 0;
 .profile-box{
     display:flex;
     justify-content:center;
+    align-items: center;
 }
 
 .profile-img{
 
-    width:100%;
+    width:380px;
     max-width:380px;
-    height:auto;
+    height:380px;
 
     border-radius:50%;
     object-fit:cover;
@@ -354,4 +405,49 @@ padding:90px 0;
         margin-left:0 !important;
     }
 
-}                        
+}   
+
+@media (max-width: 768px){
+
+    .profile-box{
+        margin-top: 35px;
+    }
+
+    .profile-img{
+        width: 260px;
+        height: 260px;
+    }
+
+}
+
+@media (max-width: 576px){
+
+    .profile-img{
+        width: 220px;
+        height: 220px;
+    }
+
+}   
+@media (max-width:768px){
+
+    .logo-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .skill-item{
+        width: 140px;
+    }
+
+    .skill-item img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-item span{
+        font-size: 14px;
+    }
+
+}                  
