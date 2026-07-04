@@ -194,7 +194,7 @@ padding:90px 0;
 }
 
 .hero-title{
-    font-size:65px;
+    font-size:72px;
     font-weight:bold;
 }
 
@@ -236,8 +236,9 @@ padding:90px 0;
 
 .profile-img{
 
-    width:360px;
-    height:360px;
+    width:100%;
+    max-width:380px;
+    height:auto;
 
     border-radius:50%;
     object-fit:cover;
@@ -313,4 +314,44 @@ padding:90px 0;
     gap: 50px;                                                                                                                                                                                                       
 }
 
-                         
+ /* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+
+@media (max-width: 768px){
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero-title{
+        font-size:48px;
+        line-height:1.1;
+    }
+
+    .hero-job{
+        font-size:28px;
+    }
+
+    .hero-desc{
+        font-size:18px;
+    }
+
+    .profile-img{
+        width:260px;
+        height:260px;
+        margin-top:30px;
+    }
+
+    .hero-button{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-button .btn{
+        width:100%;
+        margin-left:0 !important;
+    }
+
+}                        
